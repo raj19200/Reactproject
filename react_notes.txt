@@ -1,0 +1,94 @@
+---------------------------------------------------------------------
+import React from 'react'
+import ReactDom from 'react-dom'
+ReactDom.render("what is Disply?","whom is show")
+ReactDom.render(<h1>hello</h1>,document.getelementbyId("root"));
+---------------------------------------------------------------------
+what is jsx in react js?
+	JSX stands for JavaScript XML. 
+	JSX allows us to write HTML in React js. 
+	JSX makes it easier to write and add HTML in React.
+	It is a faster than regular javascript because perform optimization while translating the code to JavaScript.
+---------------------------------------------------------------------
+How to render multiple element inside reactDom?
+	Render multiple element inside reactDom by using <div></div> Tag but this div tag add extra div  in html.
+	so in react js one method is there for rendering multiple element using react fragment(<></>). 
+---------------------------------------------------------------------
+Javascript Expression?
+	javaScript Expression can be done using curly braces.
+---------------------------------------------------------------------
+Es6 template literals.
+	`es6 template ${expression}`
+---------------------------------------------------------------------
+jsx Attributes
+	React DOM uses camelCase property naming convention instead of HTML attribute names.
+
+	For example, class becomes className in JSX, and tabindex becomes tabIndex.
+---------------------------------------------------------------------
+css
+    External css---create css file and than import this css file.
+	inline css---<h1 style={{color: "red"}}>Hello Style!</h1>
+	
+	interal css---
+	const mystyle = {
+      color: "white",
+      backgroundColor: "DodgerBlue",
+      padding: "10px",
+      fontFamily: "Arial"
+    };
+    return (
+      <div>
+      <h1 style={mystyle}>Hello Style!</h1>
+      <p>Add a little style!</p>
+      </div>
+    );
+----------------------------------------------------------------------
+Es6 Module?
+export default demo;---------import demo from './demo';
+export {fname,lname};---------import {fname,lname} from './demo'; 
+----------------------------------------------------------------------
+what is React Component?
+	Components are independent and reusable bits of code.
+	They serve the same purpose as JavaScript functions, but work in isolation and returns HTML via a render function.
+	Components are two types, Class components and Function components.	
+----------------------------------------------------------------------
+what is hooks in react js?
+	Hooks are the new feature introduced in the react version 16.8.
+	It does not work inside class.
+	Hooks should always be used at top level of react function.
+	It allow you to use state and other react feature without writing a class.
+	
+	---------------------------------------------------------------------------------------
+	1)usestate :-usestate() function components for setting and retrieving state.
+					const [getname,setname]=usestate("value")
+	2)useeffect :-
+				useeffect automattically call after render method
+				useeffect(()=>{
+					alert("hi");
+				})
+	3)usecontext :-
+				contextapi allow you to pass the property to the particular components
+				contextapi allow you to easily access data at different level of components tree without passing prop to every level.
+
+				step:-
+					1)createcontext
+					2)provider
+					3)consumer
+----------------------------------------------------------------------------
+React Router:-
+		 Routing is a process in which a user is directed to different pages based on their action or request.
+		 ReactJS Router is mainly used for developing Single Page Web Applications.
+		 <BrowserRouter>: It is used for handling the dynamic URL.
+		 <HashRouter>: It is used for handling the static request.
+		 Route:-
+			It is used to define and render component based on the specified path. 
+		 Switch:-
+			Switch components is used to render components only when path will be matched.
+----------------------------------------------------------------------------
+react components vs react render
+	The key differance between react components and react render is that in
+	react component every time call new components and in react render only change property value.
+----------------------------------------------------------------------------
+useparams:-useParams hooks returns an object of key/value pairs of URL parameters.
+uselocation:-uselocation hooks return location object that represent current url. 
+usehistory:-usehistory hooks return history object that gives you to access instance history.
